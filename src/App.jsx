@@ -9,8 +9,8 @@ import { Buffer } from 'buffer';
 window.Buffer = Buffer;
 import { create } from 'ipfs-http-client';
 
-const projectId = "2Dq02ahM65QuUktGC4cx0ayhQnK";
-const projectSecret = "0b9e7c2675042a4929cef419592d6606";
+const projectId = "";   //  projectId provided by IPFS
+const projectSecret = "";   // projectSecret key provided by IPFS
 
 const auth = 'Basic ' + Buffer.from(projectId + ":" + projectSecret).toString('base64');
 
