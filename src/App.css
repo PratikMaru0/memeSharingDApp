@@ -1,0 +1,296 @@
+body{
+  background:#161748;
+  color: white;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+         
+.btn-grad2 {
+  background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: bold;
+  margin:3rem;
+}
+
+
+.btn-grad2:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+/*   border-color:#17184a; */
+  font-weight: bold;
+  margin:2rem;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.txt{
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: gray;
+  margin-top: 16px;
+  margin:1rem;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+}
+
+
+
+input {
+  margin-top: 1.5rem;
+  margin-left: 3.5rem;
+/*   margin-right: 1.5rem; */
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    padding: 0.7rem;
+    border: thin solid grey;
+    border-radius: 8px;
+  	background-color:blueviolet;
+}
+
+input::file-selector-button:hover {
+    font-weight: bold;
+    color: blueviolet;
+    padding: 0.7rem;
+    border: thin solid grey;
+    border-radius: 8px;
+  	background-color: white;
+}
+
+#videoTitle{
+/*   width:100px; */
+    font-weight: bold;
+    color: blueviolet;
+/*     border: 2px solid blueviolet; */
+    border: 2px solid whitesmoke;
+    padding: 1rem;
+/*     border: thin solid grey; */
+    border-radius: 8px;
+/*   	background-color: #fff5f5; */
+  	background-color: #161748;
+    color:white;
+    margin:2rem;
+    box-shadow: 0 0 20px #eee;
+    font-size: 17px;
+  outline:none;
+}
+
+/* From https://css.glass */
+
+/* .card{ */
+/*   background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border:none;
+  margin:0.5rem;
+} */
+
+.card{
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.6px);
+  -webkit-backdrop-filter: blur(0.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin:1.5rem;
+  border:none;
+}
+
+.paddi{
+  padding:0.7rem;
+}
+
+.message{
+  
+/*   border:2px solid red; */
+  padding:1rem;
+  /* From https://css.glass */
+/* From https://css.glass */
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.12);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.6px);
+-webkit-backdrop-filter: blur(0.6px);
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  margin-top:0.5rem;
+}
+
+.address{
+  font-style:italic;
+  color:#faebeb
+}
+
+.time{
+  color:gray;
+  padding:0.3rem;
+}
+
+h1 {
+  overflow: hidden;
+  text-align: center;
+}
+
+h1:before,
+h1:after {
+/*   background-color: #000; */
+  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+  content: "";
+  display: inline-block;
+  height: 3px;
+  border-radius:2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #161748;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size:12px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.image{
+  border-radius:20px;
+  padding-top:15px;
+  padding-left:10px;
+  padding-right:10px;
+/*   border:10px solid red; */
+}
+
+.image img{
+  border-radius:20px;
+  padding-top:6px;
+}
+
+.file{
+  border:2px solid red;
+  border: 2px solid whitesmoke;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #161748;
+  color:white;
+  box-shadow: 0 0 20px #eee;
+  font-size: 17px;
+  outline:none;
+  width:100%;
+  justify-content:center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.time span{
+  font-size:15px;
+  color:white;
+  text-decoration: none;
+  
+}
+
+.time span:hover{
+  color: hotpink;
+    text-decoration: none;
+}
+
+.time span:visited{
+  color: green;
+}
